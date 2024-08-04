@@ -28,10 +28,9 @@ class Device:
         :param capabilities: Appium capabilities object
         :param appium_serv: Appium server URL
         """
-        self.driver = webdriver.Remote(appium_serv, options=UiAutomator2Options().load_capabilities(capabilities))
         self.log = logging.getLogger(__name__)
-
         self.log.info(f"Connecting to appium at {appium_serv} with capabilities: {pformat(capabilities)}")
+        self.driver = webdriver.Remote(appium_serv, options=UiAutomator2Options().load_capabilities(capabilities))
 
     def activate_app(self, app=GRDN_APP):
         self.log.info(f"Activating app {app}")
