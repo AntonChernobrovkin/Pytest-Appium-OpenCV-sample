@@ -11,3 +11,6 @@ and have to find them with image search by OpenCV
 - Set device capabilities and Appium url in dynamic_env.py 
 - Connect device to host, start Appium
 - Start test with `$pytest` from root directory of project
+
+## Known issues
+Debug log file "autotests.log" is very big because of Selenium Debug-level logs, that save all images passed through it.
