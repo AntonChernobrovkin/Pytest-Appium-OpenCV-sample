@@ -12,7 +12,7 @@ def device_with_grdn():
     log.info("Creating device with Gardenscape app")
     device = Device()
     device.activate_app()
-    yield Device()
+    yield device
     log.info("Terminating Gardenscape app and quitting session")
     device.terminate_app()
     device.quit_session()
