@@ -1,11 +1,9 @@
-from pathlib import Path
-
 import pytest
-
+import logging
+from pathlib import Path
 from classes.buttons import Buttons
 from classes.device import Device
-# from utilities.logger import logger
-import logging
+
 log = logging.getLogger(__name__)
 
 

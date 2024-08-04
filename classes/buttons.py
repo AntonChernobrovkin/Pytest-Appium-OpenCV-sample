@@ -5,7 +5,7 @@ from classes.cv import CvImage
 
 class Button:
     """
-    Class that holds button properties and it's image in Cv ready format
+    Class that holds button properties, and it's image in Cv ready format
     :var image: CvImage object
     :var x: x coordinate of the button
     :var y: y coordinate of the button
